@@ -6,11 +6,14 @@ An imaginary online-shop wih drf
 - Optimized ORM
 - Admin panel
 - Test script
-- celery tasks
+- Celery tasks
 - JWT Authentication
 - Django Authentication
-- viewSets
-- fake smtp server
+- ViewSets
+- Fake smtp server<br>
+.<br>
+.<br>
+.<br>
 
 
 ### Status
