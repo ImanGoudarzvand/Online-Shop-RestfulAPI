@@ -184,3 +184,13 @@ DEFAULT_FROM_EMAIL = 'from@moshbuy.com'
 ADMINS = [
     ('Mosh', 'admin@moshbuy.com')
 ]
+
+CELERY_BROKER_URL = 'redis://localhost:6379/1'
+
+CELERY_BEAT_SCHEDULE = {
+    'notify_customers':{
+        'task': 'playground.task.notify_customers',
+        'schedule': 2,
+        'args':['hellooo']
+    }
+}
