@@ -6,7 +6,6 @@ name = "pypi"
 [packages]
 django = "*"
 django-debug-toolbar = "*"
-mysqlclient = "*"
 djangorestframework = "*"
 drf-nested-routers = "*"
 django-filter = "*"
@@ -18,6 +17,8 @@ django-templated-mail = "*"
 redis = "*"
 celery = "*"
 flower = "*"
+psycopg2-binary = "*"
+django-redis = "*"
 
 [dev-packages]
 autopep8 = "*"

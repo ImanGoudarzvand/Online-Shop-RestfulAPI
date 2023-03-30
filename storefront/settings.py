@@ -99,11 +99,12 @@ WSGI_APPLICATION = 'storefront.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'storefront3_4',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'storefront',
+        'USER': 'postgres',
+        'PASSWORD': 'Test@123',
         'HOST': 'localhost',
-        'USER': 'root',
-        'PASSWORD': 'iman1376'
+
     }
 }
 
@@ -192,5 +193,15 @@ CELERY_BEAT_SCHEDULE = {
         'task': 'playground.task.notify_customers',
         'schedule': 2,
         'args':['hellooo']
+    }
+}
+
+CACHES = {
+    "default": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://127.0.0.1:6379/2",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
     }
 }
