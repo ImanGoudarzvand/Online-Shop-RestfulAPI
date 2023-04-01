@@ -19,6 +19,7 @@ celery = "*"
 flower = "*"
 psycopg2-binary = "*"
 django-redis = "*"
+gunicorn = "*"
 
 [dev-packages]
 autopep8 = "*"
